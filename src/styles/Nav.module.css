@@ -1,0 +1,79 @@
+/*DesktopContainer*/
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+.desktopNavContainer{
+    width: 100vw;
+    min-height: 5em;
+    background: rgba(213, 67, 67, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0 5em;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+.desktopNavContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.links{
+    cursor: pointer;
+    transition: 0.3s ease-in-out ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+
+}
+
+.links:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+
+
+
+    
+
+/*MobileNav*/
+.mobileNavContainer{
+    width: 22em;
+    height: 4em;
+    border-radius: 1em;
+    background-color: azure;
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+     transform: translateX(-50%);
+     z-index: 11;
+}
+
+.mobileNavLinks{
+    position: relative;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobileNavLink{
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: #dc2828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

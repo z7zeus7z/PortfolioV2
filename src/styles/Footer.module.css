@@ -1,0 +1,91 @@
+.footerPageContainer{
+     min-height: 50vh;
+     
+}
+
+.contentContainer{
+     width: 100%;
+     display: grid;
+     grid-template-rows: repeat(3,5em);
+     grid-template-areas: 
+     "Logo"
+     "Media"
+     "Links"
+     ;
+     margin: 3em 0 ;
+}
+
+.logo{
+     grid-area: Logo;
+     color: white;
+     background-color: #B53636;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.mediaContainer{
+     grid-area: Media;
+     display: flex;
+     gap: 2em;
+}
+
+.media{
+     width: 3em;
+     height: 3em;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #dc2828;;
+     color: white;
+}
+
+.quickLinks{
+     grid-area: Links;
+     display: flex;
+     flex-direction: column;
+     gap: 2em;
+     background-color: #B53636;
+}
+
+.quickLinks h4 {
+     font-size: 1.5em;
+     color: white;
+}
+
+.quickLinks ul {
+     display: flex;
+     color: white;
+     
+}
+.quickLinks li {
+     background-color: #B53636;
+}
+
+.quickLinks a {
+     text-decoration: none;
+     color: white;
+}
+
+/*MEDIA*/
+
+@media (min-width:900px) {
+     .contentContainer{
+     grid-template-columns: repeat(3,1fr);
+     grid-template-areas: 
+     "Logo Media Links";
+     gap: 5em;
+}
+
+.mediaContainer{
+     flex-direction: column;
+     height: 15em;
+}
+.quickLinks ul {
+     flex-direction: column;
+}
+
+
+}
